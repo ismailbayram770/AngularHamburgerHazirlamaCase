@@ -1,0 +1,80 @@
+<div class="container" style="margin-top: 20px;">
+
+  <div class="">
+
+    <div>
+      <label class="" style="margin-bottom: 5px;">ET SEÇİMİ</label>
+      <select class="form-select" [(ngModel)]="etSecimi" id="inputGroupSelect01" style="width: 100px;">
+        <option selected value="tavuk">Tavuk</option>
+        <option value="kofte">Köfte</option>
+      </select>
+    </div>
+   
+    <div *ngIf="etSecimi=='kofte'" style="margin-top: 5px;">
+      <label class="" style="margin-bottom: 5px;">Köfte Pişimi</label>
+      <select class="form-select" [(ngModel)]="koftePisimi" style="width: 150px;">
+        <option selected value="az">Az Pişmiş</option>
+        <option value="orta">Orta Pişmiş</option>
+        <option value="çoks">Çok Pişmiş</option>
+      </select>
+    </div>
+
+    <div style="margin-top: 5px;">
+      <h5>İçindeki Malzemler</h5>
+      <input type="checkbox" name="Marul" id="marul" >Marul <br>
+      <input type="checkbox" name="Domates" id="domates" >Domates <br>
+      <input type="checkbox" name="Tursu" id="tursu" >Turşu <br>
+      <input type="checkbox" name="Sogan" id="sogan">Soğan <br>
+    </div>
+  </div>
+
+  <div style="margin-top: 10px;">
+    <button class="btn btn-primary" (click)="SiparisVer()">Siparis Ver</button>
+  </div>
+  <div style="margin-top: 10px;" *ngIf="message">
+   <p >
+    {{message}}
+   </p>
+  </div>
+
+  <div style="margin-top: 10px;" *ngIf="message2">
+    <p >
+     {{message2}}
+    </p>
+   </div>
+
+   <div style="margin-top: 10px;" *ngIf="message3">
+    <p >
+     {{message3}}
+    </p>
+   </div>
+
+   <div style="margin-top: 10px;" *ngIf="message4">
+    <p >
+     {{message4}}
+    </p>
+   </div>
+
+   <div style="margin-top: 10px;" *ngIf="message5">
+    <p >
+     {{message5}}
+    </p>
+   </div>
+
+   <div style="margin-top: 10px;" *ngIf="message6">
+    <p >
+     {{message6}}
+    </p>
+   </div>
+
+   <div style="margin-top: 10px;" *ngIf="message7">
+    <p >
+     {{message7}}
+    </p>
+   </div>
+   <div style="margin-top: 10px;" *ngIf="message8">
+    <p >
+     {{message8}}
+    </p>
+   </div>
+</div>
